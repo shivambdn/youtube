@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" );
+:root{
+    --black: #0f0f0f;
+    --white: #ffffff;
+    --gray: #3d3d3d;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+}
+header{
+    height: 3rem;
+    display: flex;
+    padding: 5px 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+header > .logo, header > .logo > img{
+height: 3rem;
+}
+.logo{
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+}
+.logo > span:hover{
+    cursor: pointer;
+}
+.logo:hover{
+    background-color: var(--gray);
+}
+.button{
+    background-color: var(--white);
+    border: 1px solid grey;
+    color: var(--black);
+    padding: 5px 1rem;
+    border-radius:25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+   cursor: pointer;
+}
+.button:hover{
+background-color: var(--gray);
+}
+.pointer{
+    cursor: pointer;
+}
+.pointer:hover{
+    background-color: var(--gray);
+}
+.search-input > input{
+background-color: var(--white);
+outline: none;
+border: none;
+}
+.search-input > button {
+    background-color: var(--white);
+    border: none;
+    color: var(--black);
+}
+.search-input{
+    border: 1px solid var(--gray);
+    border-radius: 25px;
+    padding: 5px 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav{
+    width: 15%;
+    height: calc(100vh - 4rem);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+align-items: stretch;
+overflow-x: hidden;
+overflow-y: auto;
+}
+nav a{
+    color: var(--gray);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.80rem;
+}
+.nav-item{
+display: flex;
+align-items: center;
+gap: 1.5rem;
+padding: 0.5rem 1rem;
+border-radius: 0.5rem;
+}
+.nav-item:hover{
+    background-color: var(--gray);
+}
+hr{
+    width: 100%;
+}
+
+.suggestions{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0px 2.5rem;
+    overflow-x: auto;
+}
+.suggestions > span {
+    color: var(--white);
+    background-color: var(--gray);
+    border-radius: 5px;
+    padding: 0.25rem 0.75rem;
+    flex-shrink: 0;
+}
+.suggestions > span.active{
+    background-color: var(--white);
+    color: var(--black);
+}
+main{
+    display: flex;
+    gap: 0.5rem;
+}
+section{
+    width: 85%;
+    height: calc(100vh - 6rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.video-list-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 2.5rem;
+}
+.video-list-item{
+    width: 30%;
+}
+.video-thumbnail{
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.video-meta{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.channel-logo{
+    height: 2.5rem;
+    border-radius: 50%;
+}
+.video-title{
+    font-weight: 600;
+}
+.channel-name{
+    font-size: 0.9rem;
+    color: var(--gray);
+    line-height: 0.9rem;  
+}
+.channel-name:hover{
+    color: blue;
+}
+.video-views, .video-upload-date{
+    color: var(--gray);
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+}
